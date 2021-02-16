@@ -19,7 +19,7 @@ namespace WebApplication1.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns> fn+"fortnights at $ 5.50/FN= "+amount+" CAD","HST 13%= $"+HST+" CAD","Total= $"+Total+" CAD" </returns>
-        public IEnumerable<string> HostingCost(double id)
+        public IEnumerable<string> GetHostingCost(double id)
         {
             double fn=Math.Round(Math.Floor(id/14)+1),2);
             double amount=Math.Round(5.50*fn,2);
