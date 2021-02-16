@@ -21,5 +21,14 @@ namespace WebApplication1.Controllers
         {
             return "Greetings to " + id +" people!";
         }
+        /// <summary>
+        /// This method returns string when receiving a POST request 
+        /// POST api/Greeting
+        /// </summary>
+        /// <returns>"Hello World!"</returns>
+        public string PostGreeting()
+        {
+            return "Hello World!";
+        }
     }
 }
